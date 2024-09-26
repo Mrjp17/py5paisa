@@ -536,8 +536,8 @@ class FivePaisaClient:
 
     def connect(self, wspayload: dict):
         try:
-            if self.is_blank_or_none(self.WEBSOCKET_URL):
-                self.WEBSOCKET_URL=self.decode_token(self.Jwt_token)
+            #if self.is_blank_or_none(self.WEBSOCKET_URL):
+             #   self.WEBSOCKET_URL=self.decode_token(self.Jwt_token)
 
             self.web_url = f'{self.WEBSOCKET_URL}{self.Jwt_token}|{self.client_code}'
 
