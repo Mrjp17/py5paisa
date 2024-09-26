@@ -539,7 +539,7 @@ class FivePaisaClient:
             #if self.is_blank_or_none(self.WEBSOCKET_URL):
              #   self.WEBSOCKET_URL=self.decode_token(self.Jwt_token)
 
-            self.web_url = f'{self.WEBSOCKET_URL}{self.Jwt_token}|{self.client_code}'
+            self.web_url = f'wss://openfeed.5paisa.com/Feeds/api/chat?Value1={self.Jwt_token}|{self.client_code}'
 
             def on_open(ws):
                 log_response("Streaming Started")
